@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyCompany.EmployeeService.Api</name>
+    </assembly>
+    <members>
+        <member name="M:MyCompany.EmployeeService.Api.Controllers.EmployeesController.Post(MyCompany.EmployeeService.Api.Models.CreateEmployee)">
+            <summary>
+            Register a new employee in the database.
+            </summary>
+            <returns>A <see cref="T:System.Threading.Tasks.Task"/> representing the asynchronous operation.</returns>
+            <response code="200">Returns the successfully created employee.</response>
+            <response code="400">Employee data was not correct.</response>
+            <response code="500">Something went terribly wrong.</response>
+        </member>
+        <member name="M:MyCompany.EmployeeService.Api.Controllers.EmployeesController.Put(System.Int32,MyCompany.EmployeeService.Api.Models.UpdateEmployee)">
+            <summary>
+            Update an existing employee in the database.
+            </summary>
+            <returns>A <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> representing the result.</returns>
+            <response code="200">Returns the successfully updated employee.</response>
+            <response code="400">Employee data was not correct.</response>
+            <response code="500">Something went terribly wrong.</response>
+        </member>
+        <member name="M:MyCompany.EmployeeService.Api.Controllers.EmployeesController.Get">
+            <summary>
+            Returns all registered employees.
+            </summary>
+            <returns>A <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> representing the result.</returns>
+            <response code="200">Returns a list of all employees.</response>
+            <response code="500">Something went terribly wrong.</response>
+        </member>
+        <member name="M:MyCompany.EmployeeService.Api.Controllers.EmployeesController.Get(System.Int32)">
+            <summary>
+            Returns a registered employees with the matching id.
+            </summary>
+            <returns>A <see cref="T:Microsoft.AspNetCore.Mvc.IActionResult"/> representing the result.</returns>
+            <response code="200">Returns the employee with the matching id.</response>
+            <response code="204">No employee with given id was found.</response>
+            <response code="500">Something went terribly wrong.</response>
+        </member>
+    </members>
+</doc>
